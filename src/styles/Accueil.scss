@@ -1,0 +1,40 @@
+.body-acceuil {
+    width: 100%;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px auto;
+  
+
+}
+.img-acceuil {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    mix-blend-mode: darken;
+}
+.paragraphe-container {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68.45px;
+    
+}
+
+.main-container {
+    max-width: 1240px;
+    height: 829px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    margin: 45px auto;
+    width: 100%;
+}

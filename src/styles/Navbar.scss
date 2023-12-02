@@ -1,0 +1,34 @@
+.LogoNav {
+    min-width: 335px;
+    max-width: 1240px;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin: 45px auto;
+}
+
+nav {
+    display: flex;
+    gap: 57px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.logo-nav {
+    max-width: 210.32px;
+    max-height: 68px;
+}
+
+.link-accueil {
+    text-decoration: none;
+    color: #FF6060;
+    ;
+}
+.link-propos {
+    text-decoration: none;
+    color: #FF6060;
+    ;
+}

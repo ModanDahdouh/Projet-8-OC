@@ -5,6 +5,8 @@ import Page404 from "./Route/Page404";
 import Accueil from "./Route/Accueil";
 import APropos from "./Route/APropos";
 
+import Location from "./Route/Location";
+
 import Navbar from "./Navbar";
 
 import Footer from "./Footer";
@@ -15,6 +17,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Accueil />} />
+                <Route path="/location/:id" element={<Location />} />
                 <Route path="Propos" element={<APropos />} />
                 <Route path="*" element={<Page404 />} />
             </Routes>

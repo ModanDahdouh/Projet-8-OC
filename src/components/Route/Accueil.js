@@ -1,6 +1,7 @@
 import React from "react";
 import IMGAccueil from "../../assets/IMGAccueil.png";
 import "../../styles/Accueil.scss";
+import CardLocation from "../CardLocation";
 
 export default function Accueil() {
     return (
@@ -11,7 +12,9 @@ export default function Accueil() {
                     Chez vous, partout et ailleurs
                 </p>
             </div>
-            <div className="main-container"></div>
+            <div className="main-container">
+                <CardLocation />
+            </div>
         </div>
     );
 }

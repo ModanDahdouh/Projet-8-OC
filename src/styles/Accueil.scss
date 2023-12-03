@@ -32,9 +32,12 @@
 
 .main-container {
     max-width: 1240px;
-    height: 829px;
+  
     border-radius: 25px;
+    display: flex;
     background: #F6F6F6;
     margin: 45px auto;
     width: 100%;
+    flex-wrap: wrap;
 }
+

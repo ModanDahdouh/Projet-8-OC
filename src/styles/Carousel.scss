@@ -1,0 +1,58 @@
+/* Carousel Container */
+.carousel-container {
+  width: 100%;
+  height: 415px;
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    flex-shrink: 0;
+    width: 100%;
+    .slide {
+        flex: 0 0 100%;
+        min-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+}
+
+.img-carousel {
+    object-fit: cover;
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+}
+
+/* Navigation Arrows */
+.navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.arrow {
+    width: 46.68px;
+    height: 79.2px;
+    cursor: pointer;
+}
+
+/* Slide Counter */
+.slide-counter {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+}

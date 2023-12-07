@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 45px auto;
 }
 
@@ -22,13 +22,16 @@ nav {
     max-height: 68px;
 }
 
-.link-accueil {
-    text-decoration: none;
-    color: #FF6060;
-    ;
-}
+.link-accueil,
 .link-propos {
-    text-decoration: none;
-    color: #FF6060;
-    ;
+  text-decoration: none;
+  color: #FF6060;
+  
 }
+
+.link-accueil.active,
+.link-propos.active {
+  text-decoration: underline;
+  
+}
+

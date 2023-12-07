@@ -1,0 +1,53 @@
+.container-host-fastar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-host {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-host {
+  width: 64px;
+  height: 64px;
+  border-radius: 34px;
+}
+
+.p-host-name {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: right;
+}
+
+.container-FaStar {
+  padding-top: 40px;
+  left: 13px;
+  position: relative;
+}
+
+/* Styles pour les étoiles */
+.card-rating {
+    display: inline-block;
+    font-size: 0; /* Pour éviter l'espace entre les étoiles */
+  }
+  
+  .fa-star {
+    color: #FF6060; /* Couleur des étoiles remplies */
+  }
+  
+  .neutral-star {
+    color: #E3E3E3;
+  }
+  
+  /* Optionnel : ajustement de la taille des étoiles */
+  .fa-star,
+  .neutral-star {
+    font-size: 22px;
+    width: 37px;  /* Taille des étoiles */
+  }

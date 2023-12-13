@@ -57,3 +57,21 @@
     letter-spacing: 0em;
     text-align: center;
 }
+
+@media (max-width: 765px) {
+    .img-carousel {
+        height: 255px;
+    }
+    .navigation {
+        width: 100%;
+        margin-left: 0;
+    }
+    .arrow {
+        height: 19.8px;
+        width: 11.67px;
+        padding: 10px;
+    }
+    .slide-counter {
+        display: none;
+    }
+}

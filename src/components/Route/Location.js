@@ -5,17 +5,23 @@ import "../../styles/Location.scss";
 import Carousel from "../Carousel.js";
 import ButtonLocation from "../ButtonLocation.js";
 import FaStar from "../FaStar.js";
+import Page404 from "./Page404.js";
 
 export default function Location() {
     const { id } = useParams();
+
     const selectedLocation = location.find((item) => item.id === id);
+
+    if (!selectedLocation) {
+        return <Page404 />;
+    }
     return (
         <div className="container-location">
             <div className="carousel">
                 <Carousel />
             </div>
             <div className="container-location-2">
-                <div>
+                <div className="conainer-title-tags">
                     <h2 className="h2-TitleLocation">
                         {selectedLocation.title}
                     </h2>
@@ -38,24 +44,3 @@ export default function Location() {
         </div>
     );
 }
-
-// {/* <p>{selectedLocation.description}</p>
-//             <p>Hôte : {selectedLocation.host.name}</p>
-//             <img
-//                 src={selectedLocation.host.picture}
-//                 alt={selectedLocation.host.name}
-//             />
-//             <p>Rating : {selectedLocation.rating}</p>
-//             <p>Emplacement : {selectedLocation.location}</p>
-//             <h3>Équipements :</h3>
-//             <ul>
-//                 {selectedLocation.equipments.map((equipment, index) => (
-//                     <li key={index}>{equipment}</li>
-//                 ))}
-//             </ul>
-//             <h3>Tags :</h3>
-//             <ul>
-//                 {selectedLocation.tags.map((tag, index) => (
-//                     <li key={index}>{tag}</li>
-//                 ))}
-//             </ul> */}

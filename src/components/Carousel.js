@@ -50,20 +50,22 @@ export default function Carousel() {
                     </div>
                 ))}
             </div>
-            <div className="navigation">
-                <img
-                    src={ArrowLeft}
-                    alt="Previous"
-                    className="arrow"
-                    onClick={prevSlide}
-                />
-                <img
-                    src={ArrowRight}
-                    alt="Next"
-                    className="arrow"
-                    onClick={nextSlide}
-                />
-            </div>
+            {selectedLocation.pictures.length > 1 && ( // Condition pour afficher les flèches
+                <div className="navigation">
+                    <img
+                        src={ArrowLeft}
+                        alt="Previous"
+                        className="arrow"
+                        onClick={prevSlide}
+                    />
+                    <img
+                        src={ArrowRight}
+                        alt="Next"
+                        className="arrow"
+                        onClick={nextSlide}
+                    />
+                </div>
+            )}
             <div className="slide-counter">
                 {currentSlide + 1}/{selectedLocation.pictures.length}
             </div>

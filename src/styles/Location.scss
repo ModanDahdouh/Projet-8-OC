@@ -1,6 +1,6 @@
 .container-location {
-    width: 1240px;
-    // border: 1px solid red;
+    width: 100%;
+    max-width: 1240px;
 }
 
 .container-location-2 {
@@ -57,4 +57,39 @@
     font-weight: 500;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 765px) {
+    .carousel {
+        height: 255px;
+    }
+    .carousel-container {
+        height: 255px;
+    }
+    .img-carousel {
+        height: 255px;
+    }
+    
+    .container-location-2 {
+        flex-wrap: wrap;
+    }
+    .h2-TitleLocation {
+        font-size: 18px;
+    }
+    .h3-TitleLocation {
+        font-size: 14px;
+    }
+    .conainer-title-tags {
+        width: 100%;
+    }
+    .tags-location {
+        padding: 0;
+        justify-content: flex-start;
+        right: 0;
+    }
+    .tags-location li {
+        font-size: 10px;
+        padding: 0;
+    }
+    
 }

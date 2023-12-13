@@ -27,7 +27,7 @@
 
 .container-FaStar {
   padding-top: 40px;
-  left: 13px;
+  min-width: 198px;
   position: relative;
 }
 
@@ -51,3 +51,20 @@
     font-size: 22px;
     width: 37px;  /* Taille des étoiles */
   }
+
+  
+@media (max-width: 765px) {
+  
+  .container-host-fastar {
+      flex-direction: row-reverse;
+      width: 100%;
+      justify-content: space-between;
+      padding-bottom: 20px;
+  }
+ 
+  .p-host-name {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  
+}

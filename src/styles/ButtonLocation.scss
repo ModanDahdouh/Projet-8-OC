@@ -5,10 +5,15 @@
 .container-button-location {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
+}
+.box-button-location {
+    width: 100%;
+    max-width: 582px;
 }
 
 .button-onclick-location {
-    width: 582px;
+    width: 100%;
     display: flex;
     height: 52px;
     border-radius: 5px;
@@ -32,7 +37,7 @@
     margin: 0;
     padding: 20px;
     border-radius: 5px;
-    width: 582px;
+    width: 540px;
     
 }
 
@@ -73,4 +78,21 @@
     width: 32px;
     height: 32px;
   
+}
+
+
+@media (max-width: 765px) {
+   .container-button-location {
+    flex-direction: column;
+    gap: 20px;
+   }
+
+   .button-onclick-location {
+    font-size: 13px;
+   }
+   .rotate-back-button-location {
+    width: 16px;
+    height: 9px;
+   }
+    
 }

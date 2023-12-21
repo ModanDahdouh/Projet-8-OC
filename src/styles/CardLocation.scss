@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    width: 100%;
     padding: 50px 50px;
 }
 
@@ -10,12 +11,14 @@
     position: relative;
     overflow: hidden;
     display: flex;
-    width: 340px;
+    width: 100%;
+    max-width: 340px;
     height: 340px;
     border-radius: 10px;
     color: #ffffff;
     align-items: flex-end;
 }
+
 
 .img-card {
     width: 340px;
@@ -32,4 +35,11 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 0 20px;
+}
+
+
+@media (max-width: 1311px) {
+    .card-location {
+        justify-content: center;
+    }
 }

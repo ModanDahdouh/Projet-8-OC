@@ -47,6 +47,7 @@
 
 .tags-location li {
     min-width: 115px;
+    
     padding: 0 10px;
     height: 25px;
     display: flex;
@@ -83,6 +84,7 @@
         width: 100%;
     }
     .tags-location {
+        max-width: 365px;
         padding: 0;
         justify-content: flex-start;
         right: 0;
@@ -92,4 +94,11 @@
         padding: 0;
     }
     
+}
+
+@media (max-width: 765px) { 
+    .tags-location li {
+        width: 100%;
+        min-width: 0;
+    }
 }

@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { location } from "../../datas/DataLocation.js";
 import "../../styles/Location.scss";
 import Carousel from "../Carousel.js";
-import ButtonLocation from "../ButtonLocation.js";
+// import ButtonLocation from "../ButtonLocation.js";
+import Button from "../Button.js";
 import FaStar from "../FaStar.js";
 import Page404 from "./Page404.js";
 
@@ -40,7 +41,7 @@ export default function Location() {
                 <FaStar />
             </div>
 
-            <ButtonLocation />
+            <Button isLocationDetails={true} />
         </div>
     );
 }

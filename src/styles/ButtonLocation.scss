@@ -40,6 +40,11 @@
     width: 540px;
     
 }
+.ul-equipenments {
+    color: #FF6060;
+    list-style: none;
+    padding-left: 25px;
+}
 
 @keyframes moveText {
     0% {
@@ -91,6 +96,10 @@
     font-size: 13px;
    }
    .rotate-back-button-location {
+    width: 16px;
+    height: 9px;
+   }
+   .rotate-button-location {
     width: 16px;
     height: 9px;
    }

@@ -47,3 +47,17 @@
     // left: 235px;
     color: #FF6060;
 }
+
+@media (max-width: 600px) {
+    .p-404 {
+        font-size:220px;
+    }
+     
+ }
+
+
+@media (max-width: 400px) {
+    .p-404 {
+        font-size: 150px;
+    }
+ }

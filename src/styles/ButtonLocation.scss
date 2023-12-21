@@ -64,6 +64,8 @@
 
 /* Appliquer l'animation au texte */
 .text-move-animation-location {
+    box-sizing: border-box;
+    max-width: 100%;
     animation: moveText 0.5s;
     position: relative;
     overflow: hidden;

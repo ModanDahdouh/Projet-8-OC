@@ -1,7 +1,8 @@
-import IMGPropos from "../../assets/IMGPropos.png";
+import IMGPropos from "../assets/IMGPropos.png";
+import "../styles/APropos.scss";
+import Button from "../components/Button.js";
 
-import "../../styles/APropos.scss";
-import Button from "../../components/Button.js";
+// Page a Propos
 
 export default function Propos() {
     return (

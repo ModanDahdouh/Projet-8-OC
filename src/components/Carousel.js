@@ -5,12 +5,14 @@ import "../styles/Carousel.scss";
 import ArrowLeft from "../assets/ArrowLeft.png";
 import ArrowRight from "../assets/ArrowRight.png";
 
+// Composant fonctionnel pour afficher un carrousel d'images
 export default function Carousel() {
     const { id } = useParams();
     const selectedLocation = location.find((item) => item.id === id);
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = useRef(null);
 
+    // Fonction pour passer à la diapositive suivante
     const nextSlide = () => {
         setCurrentSlide((prevSlide) =>
             prevSlide === selectedLocation.pictures.length - 1
@@ -19,6 +21,7 @@ export default function Carousel() {
         );
     };
 
+    // Fonction pour passer à la diapositive précédente
     const prevSlide = () => {
         setCurrentSlide((prevSlide) =>
             prevSlide === 0
@@ -27,16 +30,19 @@ export default function Carousel() {
         );
     };
 
+    // Effet pour mettre à jour la position du carrousel en fonction de l'indice de la diapositive actuelle
     useEffect(() => {
+        // Fonction pour mettre à jour la position du carrousel
         const updateCarousel = () => {
             slides.current.style.transform = `translateX(-${
                 currentSlide * 100
             }%)`;
         };
 
-        updateCarousel();
-    }, [currentSlide]);
+        updateCarousel(); // Appel de la fonction pour mettre à jour le carrousel
+    }, [currentSlide]); // Déclenchement de l'effet à chaque changement de l'indice de la diapositive actuelle
 
+    // Rendu du composant Carousel
     return (
         <div className="carousel-container">
             <div className="slides" ref={slides}>
@@ -50,6 +56,7 @@ export default function Carousel() {
                     </div>
                 ))}
             </div>
+            {/* Navigation du carrousel */}
             {selectedLocation.pictures.length > 1 && ( // Condition pour afficher les flèches
                 <div className="navigation">
                     <img
@@ -66,6 +73,7 @@ export default function Carousel() {
                     />
                 </div>
             )}
+            {/* Compteur de diapositives */}
             <div className="slide-counter">
                 {currentSlide + 1}/{selectedLocation.pictures.length}
             </div>

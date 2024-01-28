@@ -1,4 +1,4 @@
-
+/* Conteneur principal pour les éléments de la section A Propos */
 .box-img-button {
     display: flex;
     flex-direction: column;
@@ -7,15 +7,14 @@
     width: 100%;
     max-width: 1240px;
 }
-
+/* Style pour les images dans la section A Propos */
 .imgAPropos {
     width: 100%;
     height: 223px;
-    
     border-radius: 25px;
     object-fit: cover;
 }
-
+/* Style pour le conteneur des boutons dans la section A Propos */
 .button-APropos {
     display: flex;
     flex-direction: column;
@@ -25,11 +24,11 @@
     width: 100%;
     overflow: hidden;
 }
-
+/* Style pour chaque boîte de bouton */
 .button-box {
     width: 100%;
 }
-
+/* Style pour chaque bouton */
 .button-onclick {
     width: 1023px;
     display: flex;
@@ -48,17 +47,15 @@
     letter-spacing: 0em;
     text-align: left;
 }
-
+/* Style pour le paragraphe dans la section A Propos */
 .p-APropos {
     background: #F6F6F6;
     color: #FF6060;
     margin: 0;
     padding: 20px;
     border-radius: 5px;
-    
-    
 }
-
+/* Animation pour le texte lorsqu'il est déplacé */
 @keyframes moveText {
     0% {
         transform: translateY(-20px);
@@ -96,4 +93,26 @@
     width: 32px;
     height: 32px;
   
+}
+
+@media (max-width: 400px) {
+    .imgAPropos {
+        height: 110px;
+        border-radius: 10px;
+    }
+    .button-APropos {
+        gap: 19px;
+    }
+    .button-onclick {
+        height: 30px;
+        font-size: 13px;
+    }
+    .rotate {
+        width: 16px;
+        height: 10px;
+    }
+    .rotate-back {
+        width: 16px;
+        height: 10px;
+    }
 }

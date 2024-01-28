@@ -1,4 +1,4 @@
-
+/* Page accueil style pour les carte location */
 .card-location {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     width: 100%;
     padding: 50px 50px;
 }
-
+/* Style pour le lien de la carte */
 .link-card {
     position: relative;
     overflow: hidden;
@@ -18,15 +18,14 @@
     color: #ffffff;
     align-items: flex-end;
 }
-
-
+/* Style pour l'image de la carte */
 .img-card {
     width: 340px;
     height: 340px;
     object-fit: cover;
     position: absolute;
 }
-
+/* Style pour le titre de l'image */
 .img-title {
     position: absolute;
     font-size: 18px;
@@ -43,3 +42,19 @@
         justify-content: center;
     }
 }
+@media (max-width: 400px) {
+
+    .card-location {
+        gap: 25px;
+        padding: 0;
+    }
+
+    .link-card {
+        height: 255px;
+    }
+
+    .img-card {
+        height: 255px;
+    }
+}
+

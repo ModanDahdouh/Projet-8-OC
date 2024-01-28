@@ -3,6 +3,7 @@ import { location } from "../datas/DataLocation.js";
 import { Link } from "react-router-dom";
 import "../styles/CardLocation.scss";
 
+// Composant fonctionnel pour afficher des cartes de location avec des liens vers les détails de chaque location
 export default function CardLocation() {
     return (
         <div className="card-location">

@@ -1,3 +1,4 @@
+// Style page erreur 404 
 .container-box-404 {
     display: flex;
     flex-direction: column;
@@ -37,6 +38,10 @@
     margin: 50px 0;   
 }
 
+.br-p-404 {
+    display: none;
+}
+
 .link-retour-accueil {
     font-family: Montserrat;
     font-size: 18px;
@@ -44,7 +49,6 @@
     line-height: 26px;
     letter-spacing: 0em;
     position: relative;
-    // left: 235px;
     color: #FF6060;
 }
 
@@ -57,7 +61,19 @@
 
 
 @media (max-width: 400px) {
+
+    .container-404 {
+        height: 155px;
+    }
     .p-404 {
         font-size: 150px;
+    }
+    .p-page-404 {
+        font-size: 18px;
+        text-align: center;
+        margin: 0 0 53px 0;
+    }
+    .br-p-404 {
+        display: inline;
     }
  }

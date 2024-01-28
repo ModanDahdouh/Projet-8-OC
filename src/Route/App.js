@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 import "../styles/App.scss";
-import Page404 from "./Route/Page404";
-import Navbar from "./Navbar";
-import Accueil from "./Route/Accueil";
-import APropos from "./Route/APropos";
-import Location from "./Route/Location";
-import Footer from "./Footer";
+import Page404 from "./Page404";
+import Navbar from "../components/Navbar";
+import Accueil from "./Accueil";
+import APropos from "./APropos";
+import Location from "./Location";
+import Footer from "../components/Footer";
 
 function App() {
+    // Rendu du composant App avec les routes et les différents composants.
     return (
         <div className="App">
             <Navbar />

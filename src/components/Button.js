@@ -54,6 +54,7 @@ export default function Button({ isLocationDetails }) {
     };
 
     if (isLocationDetails) {
+        // Button des carte de Location
         return (
             <div className="container-button-location">
                 {/* Button for Description */}
@@ -117,6 +118,7 @@ export default function Button({ isLocationDetails }) {
         );
     } else {
         return (
+            // Button la page a propos
             <div className="button-APropos">
                 {buttonTexts.map((text, index) => (
                     <div className="button-box" key={index}>

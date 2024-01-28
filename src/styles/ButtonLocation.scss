@@ -1,3 +1,4 @@
+/* Conteneur pour les boutons */
 .container-button {
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,7 @@
     letter-spacing: 0em;
     text-align: left;
 }
-
+/* Style pour les description des button des carte location  */
 .p-description-location {
     background: #F6F6F6;
     color: #FF6060;
@@ -45,7 +46,7 @@
     list-style: none;
     padding-left: 25px;
 }
-
+/* Animation pour le texte */
 @keyframes moveText {
     0% {
         transform: translateY(-20px);
@@ -72,13 +73,14 @@
     z-index: -1;
     -webkit-animation: moveText 0.5s;
 }
-
+/* Style pour l'icône de rotation */
 .rotate-button-location {
     transition: transform 0.5s ease;
     transform: rotate(-180deg);
     width: 32px;
     height: 32px;
 }
+/* Style pour l'icône de rotation inversée */
 .rotate-back-button-location {
     transition: transform 0.5s ease;
     transform: rotate(0deg);

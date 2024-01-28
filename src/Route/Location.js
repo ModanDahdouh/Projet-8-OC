@@ -1,20 +1,24 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { location } from "../../datas/DataLocation.js";
-import "../../styles/Location.scss";
-import Carousel from "../Carousel.js";
-import Button from "../Button.js";
-import FaStar from "../FaStar.js";
+import { location } from "../datas/DataLocation.js";
+import "../styles/Location.scss";
+import Carousel from "../components/Carousel.js";
+import Button from "../components/Button.js";
+import FaStar from "../components/FaStar.js";
 import Page404 from "./Page404.js";
+
+// Composant fonctionnel pour afficher les détails d'une location spécifique.
 
 export default function Location() {
     const { id } = useParams();
 
+    // Recherche de la location correspondant à l'ID spécifié.
     const selectedLocation = location.find((item) => item.id === id);
 
     if (!selectedLocation) {
         return <Page404 />;
     }
+    // Rendu des détails de la location.
     return (
         <div className="container-location">
             <div className="carousel">

@@ -6,10 +6,11 @@ import "../styles/FaStar.scss";
 // Fonction pour rendre les étoiles en fonction du nombre de ratings
 const renderStars = (stars) => {
     const totalStars = 5;
-    const filledStars = parseInt(stars); // Convertir en nombre
+    const filledStars = parseInt(stars); // Convertir en nombre entier
 
     const starElements = [];
 
+    // Boucle pour créer les éléments d'étoile remplies
     for (let i = 0; i < filledStars; i++) {
         starElements.push(
             <i
@@ -20,6 +21,7 @@ const renderStars = (stars) => {
         );
     }
 
+    // Boucle pour créer les éléments d'étoile vides (grisées)
     for (let i = filledStars; i < totalStars; i++) {
         starElements.push(
             <i
@@ -29,7 +31,7 @@ const renderStars = (stars) => {
             ></i>
         );
     }
-
+    // Rendu des étoiles avec le texte alternatif indiquant la note
     return (
         <div className="card-rating">
             {starElements}
@@ -48,17 +50,20 @@ export default function FaStar() {
     return (
         <div className="container-host-fastar">
             <div className="container-host">
+                {/* Image de l'hôte */}
                 <img
                     className="img-host"
                     src={selectedLocation.host.picture}
                     alt={selectedLocation.host.name}
                 />
+                {/* Nom de l'hôte */}
                 <p className="p-host-name">
                     {selectedLocation.host.name.split(" ")[0]}
                     <br />
                     {selectedLocation.host.name.split(" ")[1]}
                 </p>
             </div>
+            {/* Conteneur pour les étoiles de notation */}
             {selectedLocation && (
                 <div className="container-FaStar">
                     {renderStars(selectedLocation.rating)}

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/Page404.scss";
+import "../styles/Page404.scss";
+
+// Page d'erreur 404
 export default function Page404() {
     return (
         <div className="container-box-404">
@@ -8,7 +10,8 @@ export default function Page404() {
                 <p className="p-404">404</p>
             </div>
             <p className="p-page-404">
-                Oups! La page que vous demandez n'existe pas.
+                Oups! La page que <br className="br-p-404" /> vous demandez
+                n'existe pas.
             </p>
             <Link className="link-retour-accueil" to="/">
                 Retourner sur la page d’accueil
